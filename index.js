@@ -16,7 +16,11 @@ const translate = require('google-translate-api');
       if (to !== from) {
         items.push({ subtitle: `${from} to ${to}`, title: tr.text })
         if (tr.from.text.didYouMean) {
-          items.push({ subtitle: `alternative spelling`, title: tr.from.text.value })
+          items.push({
+            subtitle: `alternative spelling`,
+            title: tr.from.text.value,
+            icon: { path: `./icons/${to}.svg` }
+          })
         }
       }
     } catch (error) {
