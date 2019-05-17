@@ -14,12 +14,15 @@ const translate = require('google-translate-api');
       const from = tr.from.language.iso
 
       if (to !== from) {
-        items.push({ subtitle: `${from} to ${to}`, title: tr.text })
+        items.push({
+          subtitle: `${from} to ${to}`,
+          title: tr.text,
+          icon: { path: `./icons/${to}.svg` }
+        })
         if (tr.from.text.didYouMean) {
           items.push({
             subtitle: `alternative spelling`,
-            title: tr.from.text.value,
-            icon: { path: `./icons/${to}.svg` }
+            title: tr.from.text.value
           })
         }
       }
