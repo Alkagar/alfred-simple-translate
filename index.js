@@ -17,7 +17,7 @@ const translate = require('google-translate-api');
         items.push({
           subtitle: `${from} to ${to}`,
           title: tr.text,
-          icon: { path: `./icons/${to}.svg` }
+          icon: { path: `./icons/${to}.png` }
         })
         if (tr.from.text.didYouMean) {
           items.push({
