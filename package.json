@@ -1,20 +1,20 @@
 {
   "name": "alfred-simple-translate",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Simple workflow to translate in Alfred.",
   "main": "index.js",
   "scripts": {
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup"
   },
-  "author": "Jakub Mrowiec - Alkagar",
+  "author": "Jakub Mrowiec <alkagar@gmail.com> (http://mrowiec.org/)",
   "license": "ISC",
   "dependencies": {
     "alfy": "^0.8.0",
     "google-translate-api": "^2.3.0"
   },
   "credits": "Icons by Freepik",
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/alkagar/alfred-simple-translate.git"
   },
@@ -22,7 +22,5 @@
     "alfred",
     "workflow",
     "translate"
-  ],
-  "author": "Jakub Mrowiec <alkagar@gmail.com> (http://mrowiec.org/)"
-
+  ]
 }
